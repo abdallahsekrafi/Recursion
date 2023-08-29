@@ -1,0 +1,16 @@
+
+FUNCTION palindrome(wrd : ARRAY_OF STRING) : BOOLEAN
+VAR
+   i : INTEGER;
+BEGIN
+IF (wrd.length<=1) THEN
+   RETURN true;
+ELSE
+   FOR i FROM 0 TO wrd.length-1 /2 DO
+      IF (wrd[i] != wrd[wrd.length-i+1]) THEN
+   RETURN false;
+   END_FOR
+END_IF
+   RETURN true ;
+END
+
